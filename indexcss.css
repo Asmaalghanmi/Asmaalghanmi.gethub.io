@@ -352,7 +352,7 @@ background: transparent;
     font-family: "Montserrat", sans-serif;
     color: #000;
      flex: 0 0 auto;        /* prevent cards from shrinking */
-      
+      justify-content: space-between;
   scroll-snap-align: start; /* optional: aligns cards nicely */
 }
 .experience-container{
@@ -396,11 +396,15 @@ font-size: 19px;
 }
 .Search-QR{
     border-width: 2px;
+    margin-top: auto;
+margin-bottom: 20px;
 }
 .team-QR{
    width: 45%;
     height: 40%;
     border-width: 2px;
+    margin-top: auto;
+margin-bottom: 20px;
 }
 
 .experience-scroll-container {
@@ -428,7 +432,9 @@ font-size: 19px;
 .Vist-QR{
     width: 43%;
     height: 40%;
-    margin-bottom: 90px;
+   
+    margin-top: auto;
+margin-bottom: 20px;
 }
 
 .AI-text{
@@ -453,7 +459,8 @@ font-size: 19px;
 .CV-QR{
   width: 45%;
   height: 40%;
-    margin-bottom: 120px;
+   margin-top: auto;
+margin-bottom: 20px;
     margin-top: -30px;
     padding: 0px;
     
@@ -468,7 +475,7 @@ font-size: 19px;
   .team-QR,
   .Vist-QR,
   .CV-QR {
-    width: 90%;   /* خليها أصغر عشان ما تنزل */
+    width: 70%;   /* خليها أصغر عشان ما تنزل */
     height: auto;
     margin: 10px auto;
     display: block;
