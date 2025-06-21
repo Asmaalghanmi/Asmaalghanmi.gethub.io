@@ -455,12 +455,51 @@ font-size: 19px;
 }
 .CV-QR{
   width: 45%;
-    
   height: 40%;
     margin-bottom: 120px;
     margin-top: -30px;
     padding: 0px;
     
+}
+@media (max-width: 600px) {
+
+
+  .experience-cer{
+    width: 45%;
+    height: 40%;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    border-width:  1.7px;
+   align-self: flex-end;
+    border-style:   solid;
+    padding: 1px;
+    border-color: #000;
+    margin-right: 10px;
+   margin-bottom: 10px;
+   
+    
+}
+ 
+
+
+.CV-QR{
+  width: 45%;
+  height: 40%;
+    margin-bottom: 12px;
+    margin-top: -30px;
+    padding: 0px;
+    
+}
+
+
+.Link-QR{
+  margin-bottom: 12px;
+}
+.AI-Cer{
+  margin-bottom: 12px;
+}
+
 }
 .experience-section{
     background-color: #FBF8F8
@@ -744,4 +783,5 @@ font-size: 19px;
     .footer-email {
         margin-left: 1rem;
     }
+
 }
