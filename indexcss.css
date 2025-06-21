@@ -382,7 +382,6 @@ background: transparent;
 
 .Search-date{
 font-size: 19px;
-
   margin-top: 17px;
     word-spacing: 3px;
     letter-spacing: 0.5px;
@@ -420,7 +419,6 @@ font-size: 19px;
     text-wrap: nowrap;
     text-align: left;
     font-weight: bold;
-    padding-bottom: 25px;
     color: #000;
     font-family: 'Times New Roman', Times, serif;
     display: block;
@@ -429,7 +427,6 @@ font-size: 19px;
 }
 .Vist-QR{
     width: 43%;
-    
     height: 40%;
     margin-bottom: 90px;
 }
@@ -438,6 +435,8 @@ font-size: 19px;
     word-spacing: normal;
     margin-top: 17px;;
 }
+
+
 .Link-text{
     margin-top: 17px;
 
@@ -445,13 +444,11 @@ font-size: 19px;
 .CV-text{
     margin-top: 20px;
     word-spacing: normal;
-    
-   
 
 }
 .CV-date{
     margin-top:0px;
-    margin-bottom: 30px;
+    margin-bottom: 10%;
 }
 .CV-QR{
   width: 45%;
@@ -462,45 +459,34 @@ font-size: 19px;
     
 }
 @media (max-width: 600px) {
+  .experience-card {
+    height: auto; /* عشان الكارد ياخذ الطول حسب المحتوى */
+    padding-bottom: 20px;
+  }
 
-
-  .experience-cer{
-    width: 45%;
-    height: 40%;
-    object-fit: cover;
+  .experience-cer,
+  .team-QR,
+  .Vist-QR,
+  .CV-QR {
+    width: 90%;   /* خليها أصغر عشان ما تنزل */
+    height: auto;
+    margin: 10px auto;
     display: block;
-    position: relative;
-    border-width:  1.7px;
-   align-self: flex-end;
-    border-style:   solid;
-    padding: 1px;
-    border-color: #000;
-    margin-right: 10px;
-   margin-bottom: 10px;
-   
-    
-}
- 
+  }
 
+  .experience-container {
+    flex-wrap: wrap; /* خلي العناصر تلتف مو تمتد بالعرض */
+    justify-content: center;
+  }
 
-.CV-QR{
-  width: 45%;
-  height: 40%;
-    margin-bottom: 12px;
-    margin-top: -30px;
-    padding: 0px;
-    
+  .experience-title,
+  .experience-date {
+    text-align: center;
+    font-size: 16px;
+  }
 }
 
 
-.Link-QR{
-  margin-bottom: 12px;
-}
-.AI-Cer{
-  margin-bottom: 12px;
-}
-
-}
 .experience-section{
     background-color: #FBF8F8
 }
