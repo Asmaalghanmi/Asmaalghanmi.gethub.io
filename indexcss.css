@@ -352,7 +352,7 @@ background: transparent;
     font-family: "Montserrat", sans-serif;
     color: #000;
      flex: 0 0 auto;        /* prevent cards from shrinking */
-      justify-content: space-between;
+      
   scroll-snap-align: start; /* optional: aligns cards nicely */
 }
 .experience-container{
@@ -382,6 +382,7 @@ background: transparent;
 
 .Search-date{
 font-size: 19px;
+
   margin-top: 17px;
     word-spacing: 3px;
     letter-spacing: 0.5px;
@@ -396,15 +397,11 @@ font-size: 19px;
 }
 .Search-QR{
     border-width: 2px;
-    margin-top: auto;
-margin-bottom: 20px;
 }
 .team-QR{
    width: 45%;
     height: 40%;
     border-width: 2px;
-    margin-top: auto;
-margin-bottom: 20px;
 }
 
 .experience-scroll-container {
@@ -423,6 +420,7 @@ margin-bottom: 20px;
     text-wrap: nowrap;
     text-align: left;
     font-weight: bold;
+    padding-bottom: 25px;
     color: #000;
     font-family: 'Times New Roman', Times, serif;
     display: block;
@@ -432,17 +430,13 @@ margin-bottom: 20px;
 .Vist-QR{
     width: 43%;
     height: 40%;
-   
-    margin-top: auto;
-margin-bottom: 20px;
+    margin-bottom: 90px;
 }
 
 .AI-text{
     word-spacing: normal;
     margin-top: 17px;;
 }
-
-
 .Link-text{
     margin-top: 17px;
 
@@ -450,49 +444,33 @@ margin-bottom: 20px;
 .CV-text{
     margin-top: 20px;
     word-spacing: normal;
+    
+   
 
 }
 .CV-date{
     margin-top:0px;
-    margin-bottom: 10%;
+    margin-bottom: 30px;
 }
 .CV-QR{
   width: 45%;
   height: 40%;
-   margin-top: auto;
-margin-bottom: 20px;
+    margin-bottom: 120px;
     margin-top: -30px;
     padding: 0px;
     
 }
-@media (max-width: 600px) {
-  .experience-card {
-    height: auto; /* عشان الكارد ياخذ الطول حسب المحتوى */
-    padding-bottom: 20px;
-  }
+@media screen and (max-width: 600px) {
+    .Link-date, .AI-date, .Vist-date{
+        margin-bottom: 25px;
 
-  .experience-cer,
-  .team-QR,
-  .Vist-QR,
-  .CV-QR {
-    width: 70%;   /* خليها أصغر عشان ما تنزل */
-    height: auto;
-    margin: 10px auto;
-    display: block;
-  }
 
-  .experience-container {
-    flex-wrap: wrap; /* خلي العناصر تلتف مو تمتد بالعرض */
-    justify-content: center;
-  }
-
-  .experience-title,
-  .experience-date {
-    text-align: center;
-    font-size: 16px;
-  }
+    }
+    .Link-QR, .AI-Cer, .Vist-QR{
+        
+        margin-bottom: 15px;
+    }
 }
-
 
 .experience-section{
     background-color: #FBF8F8
@@ -776,5 +754,4 @@ margin-bottom: 20px;
     .footer-email {
         margin-left: 1rem;
     }
-
 }
