@@ -461,25 +461,34 @@ font-size: 19px;
     
 }
 @media screen and (max-width: 600px) {
-  .Link-date, .AI-date, .Vist-date {
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 16px;
-  }
 
-  .Link-QR, .AI-Cer, .Vist-QR {
-    width: 100px;
-    height: auto;
+  .AI-Cer, .Link-QR, .Vist-QR {
+    width: 100px !important;
+    height: auto !important;
     display: block;
-    margin: 0 auto 15px auto; /* center + space under */
+    margin: 10px auto 0 auto !important; /* يوسّطهم */
   }
 
-  .Search-text, .Link-text, .AI-text {
-    
+  .AI-date, .Link-date, .Vist-date {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .AI-text, .Link-text, .Search-text {
+    font-size: 15px;
+    text-align: center;
     margin-top: 10px;
-    font-size: 16px;
+    padding: 0 5px;
+  }
+
+  /* نخلي البطاقات تسمح بمساحة للداخل */
+  .experience-card {
+    height: auto !important;
+    padding-bottom: 15px;
   }
 }
+
 
 
 .experience-section{
