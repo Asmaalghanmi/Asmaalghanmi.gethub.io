@@ -461,16 +461,26 @@ font-size: 19px;
     
 }
 @media screen and (max-width: 600px) {
-    .Link-date, .AI-date, .Vist-date{
-        margin-bottom: 25px;
+  .Link-date, .AI-date, .Vist-date {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+  }
 
+  .Link-QR, .AI-Cer, .Vist-QR {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px auto; /* center + space under */
+  }
 
-    }
-    .Link-QR, .AI-Cer, .Vist-QR{
-        
-        margin-bottom: 15px;
-    }
+  .Search-text, .Link-text, .AI-text {
+    
+    margin-top: 10px;
+    font-size: 16px;
+  }
 }
+
 
 .experience-section{
     background-color: #FBF8F8
